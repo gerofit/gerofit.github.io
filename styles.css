@@ -41,3 +41,19 @@ tbody .nick {
 .nick {
   text-align: left; 
 }
+
+.rank, .sp,. kd  {
+  text-align: right ; 
+}
+
+.sp, .kd {
+  width: 6ch;
+}
+
+th {
+  padding: 1rem 1rem 0;
+}
+
+td {
+  padding: 1rem 1rem;
+}
