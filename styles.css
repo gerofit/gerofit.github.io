@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.leaderboard {
+  max-width: 25rem;
+  border: 1 px solid black;
+  margin: 5rem auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+   background-color: #ff7500;
+   color: white;
+   text-transform: uppercase;
+}
+
+table {
+    background-color: #16181e;
+    color: #999;
+    width: 100%;
+}
+
+thead{
+  font-size: 0.75rem;  
+  color: #555;  
+  text-transform: uppercase;
+}
+
+tbody .nick {
+  color: white;
+  font-weight: bold;
+}
+
+.nick {
+  text-align: left; 
+}
