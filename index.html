@@ -188,6 +188,42 @@
       font-size: 150px;
     }
   }
+  
+  table{
+  	background-color: #16181e;
+    color: #999;
+    width: 100%
+  }
+  
+  thead{
+  font-size:1.5rem;
+  color: #555;
+  text-transform: uppercase;
+  }
+  
+  tbody .site{
+  	color: white;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  
+  .site{
+  	text-align: left;
+  }
+  
+  .rank{
+  	font-size: 3rem;
+  }
+  
+  
+  .attend, .chair, .total{
+  	text-align: right;
+    font-size: 3rem;
+  }
+  
+  td{
+  	padding: 1rem;
+  }
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -258,43 +294,57 @@
 
 <!-- Container (Services Section) -->
 <div id="services" class="container-fluid text-center">
-  <h2>SERVICES</h2>
-  <h4>What we offer</h4>
+  <h2>SCOREBOARD</h2>
   <br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-off logo-small"></span>
-      <h4>POWER</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-heart logo-small"></span>
-      <h4>LOVE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-lock logo-small"></span>
-      <h4>JOB DONE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-  </div>
-  <br><br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-leaf logo-small"></span>
-      <h4>GREEN</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-certificate logo-small"></span>
-      <h4>CERTIFIED</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench logo-small"></span>
-      <h4 style="color:#303030;">HARD WORK</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
+    	<div class="leaderboard">
+        	<table>
+            	<thead>
+                	<tr>
+                      <th class="rank"></th>
+                      <th class="site">Site</th>
+                      <th class="attend">Attended</th>
+                      <th class="chair">Chair Stands</th>
+                      <th class="total">Adjusted Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                	<tr>
+                      <td class="rank">1</td>
+                      <td class="site">Durham</td>
+                      <td class="attend">100</td>
+                      <td class="chair">500</td>
+                      <td class="total">5</td>
+                    </tr>
+                    <tr>
+                      <td class="rank">2</td>
+                      <td class="site">Madison</td>
+                      <td class="attend">100</td>
+                      <td class="chair">500</td>
+                      <td class="total">5</td>
+                    </tr>
+                    <tr>
+                      <td class="rank">3</td>
+                      <td class="site">Boston</td>
+                      <td class="attend">100</td>
+                      <td class="chair">500</td>
+                      <td class="total">5</td>
+                    </tr>
+                    <tr>
+                      <td class="rank">4</td>
+                      <td class="site">Baltimore</td>
+                      <td class="attend">100</td>
+                      <td class="chair">500</td>
+                      <td class="total">5</td>
+                    </tr>
+                    <tr>
+                      <td class="rank">5</td>
+                      <td class="site">Cincinatti</td>
+                      <td class="attend">100</td>
+                      <td class="chair">500</td>
+                      <td class="total">5</td>
+                    </tr>
+                </tbody>
+            </table>
   </div>
 </div>
 
