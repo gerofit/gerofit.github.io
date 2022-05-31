@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Theme Made By www.w3schools.com -->
   <title>Gerofit PTSD Chair Stands</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -267,7 +266,8 @@
 
 <div class="jumbotron text-center">
   <h1>GEROFIT</h1> 
-  <p>Stand Up for PTSD</p> 
+  <p>Stand Up for PTSD</p><br>
+  <p id="demo"></p>
 </div>
 
 <!-- Container (About Section) -->
@@ -275,7 +275,7 @@
   <div class="row">
     <div class="col-sm-8">
       <h2>About This Website</h2><br>
-      <h4>This website is not affilated or officially endoursed by the VA or the Gerofit Program in any capactiy. It is to be used as a motivational tool to promote exercise and raise awareness of PTSD.</h4><br>
+      <h4>This website is not affilated or officially endorsed by the VA or the Gerofit Program in any capactiy. It is to be used as a motivational tool to promote exercise and raise awareness of PTSD.</h4><br>
       <p>For more information about the Gerofit Program please click the Learn More button below to visit the official website. </p>
       <br><button onclick="parent.open('https://www.va.gov/GERIATRICS/pages/gerofit_Home.asp')"  class="btn btn-default btn-lg">Learn More</button>
     </div>
@@ -609,6 +609,37 @@ $(document).ready(function(){
     });
   });
 })
+</script>
+  
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jun 15, 2022 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
 </script>
 
 </body>
